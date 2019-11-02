@@ -1,3 +1,5 @@
+[![Dart CI](https://github.com/YusukeIwaki/dart-kotlin_flavor/workflows/Dart%20CI/badge.svg)](https://github.com/YusukeIwaki/dart-kotlin_flavor/actions?query=workflow%3A"Dart+CI") ![Pub](https://img.shields.io/pub/v/kotlin_flavor)
+
 # kotlin_flavor
 
 Are you Android-app engineer, and eager to use scope functions also in Dart?
