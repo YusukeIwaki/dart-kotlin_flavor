@@ -1,0 +1,8 @@
+version: "3"
+services:
+  dart:
+    image: google/dart:2.6-dev
+    volumes:
+      - .:/kotlin_flavor
+    working_dir: /kotlin_flavor
+    command: /bin/bash
