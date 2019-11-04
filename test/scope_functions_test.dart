@@ -38,7 +38,7 @@ void main() {
         xx = it.length;
       });
       expect(xx, equals(4));
-      expect(target, equals("hoge"));
+      expect(result, equals("hoge"));
     });
   });
 
