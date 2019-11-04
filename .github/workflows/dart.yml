@@ -1,6 +1,6 @@
 name: Dart CI
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
@@ -8,11 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image:  google/dart:latest
+      image:  google/dart:2.6-dev
 
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies
       run: pub get
-    - name: Run tests
+    - name: dartfmt
+      run: dartfmt lib/ test/ example/ -n;  [ -z $(dartfmt lib/ test/ example/ -n) ] || exit 1
+    - name: Run unit tests
       run: pub run test

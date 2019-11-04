@@ -4,10 +4,14 @@ void main() {
   int len = 0;
 
   String target;
-  print(target?.also((it) { len = it.length; })); // => "null"
+  print(target?.also((it) {
+    len = it.length;
+  })); // => "null"
   print('len = ${len}'); // => "len = 0"
 
   target = "target";
-  print(target?.also((it) { len = it.length; })); // => "target"
+  print(target?.also((it) {
+    len = it.length;
+  })); // => "target"
   print('len = ${len}'); // => "len = 6"
 }
