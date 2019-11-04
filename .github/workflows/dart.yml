@@ -20,5 +20,7 @@ jobs:
       run: pub get
     - name: dartfmt
       run: dartfmt lib/ test/ example/ -n;  [ -z $(dartfmt lib/ test/ example/ -n) ] || exit 1
+    - name: linter
+      run: dartanalyzer lib/ test/ example/
     - name: Run unit tests
       run: pub run test
