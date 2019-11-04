@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - fix_dart_ci_for_master # just for test
+      - fix_dart_ci_for_hogehoge # just for test
   pull_request:
 
 jobs:
