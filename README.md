@@ -1,4 +1,4 @@
-[![Dart CI](https://github.com/YusukeIwaki/dart-kotlin_flavor/workflows/Dart%20CI/badge.svg)](https://github.com/YusukeIwaki/dart-kotlin_flavor/actions?query=workflow%3A"Dart+CI") ![Pub](https://img.shields.io/pub/v/kotlin_flavor)
+[![Dart CI](https://github.com/YusukeIwaki/dart-kotlin_flavor/workflows/Dart%20CI/badge.svg)](https://github.com/YusukeIwaki/dart-kotlin_flavor/actions?query=workflow%3A"Dart+CI") [![Pub](https://img.shields.io/pub/v/kotlin_flavor)](https://pub.dev/packages/kotlin_flavor)
 
 # kotlin_flavor
 
