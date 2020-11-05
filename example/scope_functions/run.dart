@@ -1,6 +1,6 @@
 import 'package:kotlin_flavor/scope_functions.dart';
 
-String captionFor(String selectedShopName) {
+String captionFor(String? selectedShopName) {
   // Kotlin users often use
   // `xxx?.let{ ... } ?: run { ... }`
   // just instead of
@@ -17,6 +17,6 @@ void main() {
   print(captionFor(null));
   // => "If no shop is selected, process here..."
 
-  print(captionFor("Happy Cake Shop"));
+  print(captionFor('Happy Cake Shop'));
   // => "Do with Happy Cake Shop..."
 }
