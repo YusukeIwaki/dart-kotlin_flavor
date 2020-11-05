@@ -9,21 +9,21 @@ void main() {
     });
 
     test('for simple string', () {
-      var result = "hoge".let((String x) => x.toUpperCase());
-      expect(result, equals("HOGE"));
+      var result = 'hoge'.let((String x) => x.toUpperCase());
+      expect(result, equals('HOGE'));
     });
 
     test('type conversion', () {
-      var result = "123".let((String x) => int.parse(x));
+      var result = '123'.let((String x) => int.parse(x));
       expect(result, equals(123));
     });
 
     test('with Null-Aware operators', () {
-      String target;
+      String? target;
       var result = target?.let((String s) => 'target is ${s}');
       expect(result, equals(null));
 
-      target = "hogehoge";
+      target = 'hogehoge';
       result = target?.let((String s) => 'target is ${s}');
       expect(result, equals('target is hogehoge'));
     });
@@ -31,14 +31,14 @@ void main() {
 
   group('.also', () {
     test('for simple usage', () {
-      String target = "hoge";
+      var target = 'hoge';
 
-      int xx = 1;
+      var xx = 1;
       var result = target.also((String it) {
         xx = it.length;
       });
       expect(xx, equals(4));
-      expect(result, equals("hoge"));
+      expect(result, equals('hoge'));
     });
   });
 
@@ -49,13 +49,13 @@ void main() {
     });
 
     test('with Null-Aware operators', () {
-      String target;
+      String? target;
       var result = target ??
           run(() {
-            String empty = "empty";
+            var empty = 'empty';
             return empty.toUpperCase();
           });
-      expect(result, equals("EMPTY"));
+      expect(result, equals('EMPTY'));
     });
   });
 }
