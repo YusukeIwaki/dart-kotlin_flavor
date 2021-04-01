@@ -1,12 +1,11 @@
 name: kotlin_flavor
 description: An utility package for providing static extension methods familiar in Kotlin.
 version: 0.2.0
-author: YusukeIwaki
 homepage: https://github.com/YusukeIwaki/dart-kotlin_flavor
 repository: https://github.com/YusukeIwaki/dart-kotlin_flavor
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dev_dependencies:
   pedantic: ^1.10.0
