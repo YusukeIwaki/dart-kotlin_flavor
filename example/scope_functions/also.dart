@@ -7,11 +7,11 @@ void main() {
   print(target?.also((it) {
     len = it.length;
   })); // => "null"
-  print('len = ${len}'); // => "len = 0"
+  print('len = $len'); // => "len = 0"
 
   target = 'target';
   print(target?.also((it) {
     len = it.length;
   })); // => "target"
-  print('len = ${len}'); // => "len = 6"
+  print('len = $len'); // => "len = 6"
 }

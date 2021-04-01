@@ -1,6 +1,6 @@
-## 0.2.0-nullsafety
+## 0.2.0
 
-- null-safety
+- Sounds null-safety
 
 ## 0.1.0
 

@@ -5,12 +5,8 @@ String captionFor(String? selectedShopName) {
   // `xxx?.let{ ... } ?: run { ... }`
   // just instead of
   // `if (xxx != null) { ... } else { ... }`
-  return selectedShopName?.let((name) {
-        return 'Do with ${selectedShopName}...';
-      }) ??
-      run(() {
-        return 'If no shop is selected, process here...';
-      });
+  return selectedShopName?.let((name) => 'Do with $selectedShopName...') ??
+      run(() => 'If no shop is selected, process here...');
 }
 
 void main() {
